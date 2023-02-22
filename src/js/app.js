@@ -60,9 +60,11 @@ const loader = document.querySelector("#loader");
 const url = "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0";
 
 async function fetchPokemon() {
-  loader.innerHTML = ` <div class="wrapper">
+  loader.innerHTML = ` 
+    <div class="wrapper">
     <div class="pokeball"></div>
-  </div>`;
+    </div>
+  `;
 
   try {
     const response = await fetch(url);
@@ -90,8 +92,8 @@ async function fetchPokemon() {
                pokemonData.name.slice(1)
              }</h4>
              <ul>
-             <li>weight: ${pokemonData.weight}</li>
-             <li>height: ${pokemonData.height}</li>
+               <li>weight: ${pokemonData.weight}</li>
+               <li>height: ${pokemonData.height}</li>
              </ul>
            </div>
          </a> 
