@@ -1,4 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10192181&assignment_repo_type=AssignmentRepo)
+
 # FED Javascript 1 - Course Assignment
 
 This is a vanilla website that displays a list of items fetched from an API.
@@ -28,17 +29,17 @@ In the project directory, you can run:
 
 All of these todo's must be done to pass the asssignment.
 
-- [ ] End-user can see a list of items of the home page.
-- [ ] When the End-user clicks on an item in the list they are navigated to the details page.
-- [ ] End-user can view atleast three properties of an item in a list.
-- [ ] End-user can view atleast three properties of an item on the details page.
-- [ ] A error message is present when the End-user encounters a error while viewing the index page.
-- [ ] A error message is present when the End-user encounters a error while viewing the details page.
-- [ ] End-user can view the title of the item on the browser tab for a details page.
-- [ ] End-user can view validation message when they input an incorrect name.
-- [ ] End-user can view validation message when they input an incorrect subject that is less than 10 characters.
-- [ ] End-user can view validation message when they input an incorrect Email address.
-- [ ] End-user can view a validation message when they input an incorrect physical address that is less than 25 characters long.
+- [x ] End-user can see a list of items of the home page.
+- [x ] When the End-user clicks on an item in the list they are navigated to the details page.
+- [ x] End-user can view atleast three properties of an item in a list.
+- [ x] End-user can view atleast three properties of an item on the details page.
+- [x ] A error message is present when the End-user encounters a error while viewing the index page.
+- [ x] A error message is present when the End-user encounters a error while viewing the details page.
+- [x ] End-user can view the title of the item on the browser tab for a details page.
+- [ x] End-user can view validation message when they input an incorrect name.
+- [x ] End-user can view validation message when they input an incorrect subject that is less than 10 characters.
+- [x ] End-user can view validation message when they input an incorrect Email address.
+- [x ] End-user can view a validation message when they input an incorrect physical address that is less than 25 characters long.
 
 ## End-user success criteria (Optional - 100%)
 

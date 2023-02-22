@@ -45,36 +45,20 @@ Helper functions
  * @param {item} item The object with properties from the fetched JSON data.
  */
 
-
-//  const queryString = document.location.search;
-//  const params = new URLSearchParams(queryString);
-//  const id = params.get("name");
- 
-//  const url = `https://pokeapi.co/api/v2/pokemon?name=${id}`;
- 
-//  async function fetchPokemon() {
-//    const response = await fetch(url);
-//    const json = await response.json();
- 
-//    console.log(json);
-//  }
- 
-//  fetchPokemon();
+const detailsHeader = document.querySelector(".details-header");
+const detailsContent = document.querySelector(".details-content");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-const pokemonName = document.querySelector(".title");
-const imageOfPokemon = document.querySelector(".image-pokemon");
-const abilityHtml = document.querySelector(".abilities");
-const statHtml = document.querySelector(".stats");
 
 async function fetchPokemonDetails() {
   try {
     const response = await fetch(url);
     const pokemonDetails = await response.json();
+    document.title = pokemonDetails.name + " | Pokémon ";
 
     showPokemonDetails(pokemonDetails);
   } catch (error) {
@@ -82,28 +66,26 @@ async function fetchPokemonDetails() {
   }
 }
 
-function showPokemonDetails(pokemonDetails) {
-  console.log(pokemonDetails);
-  pokemonName.innerHTML = pokemonDetails.name;
-  imageOfPokemon.src = pokemonDetails.sprites.front_default;
-  for (let i = 0; i < pokemonDetails.abilities.length; i++) {
-    let ability = pokemonDetails.abilities[i].ability.name;
-    let abilityList = `<li>${ability}</li>`;
-    abilityHtml.innerHTML += abilityList;
+function showPokemonDetails(pokemon) {
+  detailsHeader.innerHTML = pokemon.name.toUpperCase();
+
+  let abilityList = "<h4>Abilities</h4>";
+  for (let i = 0; i < pokemon.abilities.length; i++) {
+    let ability = pokemon.abilities[i].ability.name;
+    abilityList += `<li>${ability}</li>`;
   }
-  for (let i = 0; i < pokemonDetails.stats.length; i++) {
-    let stat = pokemonDetails.stats[i].stat.name;
-    let baseStat = pokemonDetails.stats[i].base_stat;
-    let statList = `<li>${stat}: ${baseStat}</li>`;
-    statHtml.innerHTML += statList;
+
+  let typeList = "<h4>Types</h4>";
+  for (let i = 0; i < pokemon.types.length; i++) {
+    let type = pokemon.types[i].type.name;
+    typeList += `<li>${type}</li>`;
   }
+
+  detailsContent.innerHTML = `
+    <img src="${pokemon.sprites.front_default}"/>
+    <ul>${abilityList}</ul>
+    <ul>${typeList}</ul>
+  `;
 }
 
 fetchPokemonDetails();
-
-
-
- 
- 
-
-
