@@ -48,7 +48,6 @@ const subjectError = document.querySelector("#js-subject-error");
 const messageError = document.querySelector("#js-message-error");
 
 formEl.addEventListener("submit", (event) => {
-  // Stop the form from reloading the page
   event.preventDefault();
 
   const name = nameEl.value;
@@ -91,15 +90,12 @@ formEl.addEventListener("submit", (event) => {
     return;
   }
 
-  // Submit the form to an API
-
   alert("Form submitted");
 });
 
 nameEl.addEventListener("blur", (event) => {
   const name = event.target.value.trim();
 
-  // Minmum 2 characters, must be letters only
   const minLengthRegex = /^[a-zA-Z]{2,}/;
 
   if (!minLengthRegex.test(name)) {
