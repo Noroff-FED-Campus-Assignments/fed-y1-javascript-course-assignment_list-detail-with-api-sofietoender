@@ -87,6 +87,7 @@ async function fetchPokemon() {
          <a href="/details.html?id=${pokemonData.name}" class="card">
            <div class="details">
              <img src="${pokemonData.sprites.front_default}" class="image"/>
+             <div class="card-details">
              <h4 class="name">${
                pokemonData.name.charAt(0).toUpperCase() +
                pokemonData.name.slice(1)
@@ -95,6 +96,7 @@ async function fetchPokemon() {
                <li>weight: ${pokemonData.weight}</li>
                <li>height: ${pokemonData.height}</li>
              </ul>
+             <div/>
            </div>
          </a> 
        `;

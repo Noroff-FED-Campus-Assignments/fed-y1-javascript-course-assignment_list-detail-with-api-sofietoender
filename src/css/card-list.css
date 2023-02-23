@@ -1,0 +1,25 @@
+
+.details {
+    
+    max-width: 300px;
+}
+
+.image{
+    background: white;
+
+}
+
+.card-details {
+    background-color: aquamarine;
+}
+
+/* @media only screen and (min-width: 601px) {
+    
+.results{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+   
+}
+
+} */

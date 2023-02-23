@@ -28,7 +28,7 @@ Helper functions
 
 // TODO: Create a function to create a DOM element
 
-document.title = "contact us | Pokémon ";
+document.title = "Contact us | Pokémon ";
 
 const introduction = document.querySelector(".introduction");
 introduction.innerHTML = "Please use the contact form for any inqueries";
@@ -70,7 +70,7 @@ formEl.addEventListener("submit", (event) => {
     alert("Please enter an address");
     return;
   }
-  if (address.lenght < 25) {
+  if (address.lenght. < 25) {
     alert("Address must be more than 25 characters");
     return;
   }
