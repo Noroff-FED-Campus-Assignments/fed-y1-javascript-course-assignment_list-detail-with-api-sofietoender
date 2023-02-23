@@ -85,13 +85,21 @@ formEl.addEventListener("submit", (event) => {
     return;
   }
 
-  if (message.length < 0) {
+  if (message === "") {
     alert("Please enter a message");
     return;
   }
 
   alert("Form submitted");
+
+  nameEl.value = "";
+  emailEl.value = "";
+  addressEl.value = "";
+  subjectEl.value = "";
+  messageEl.value = "";
 });
+
+
 
 nameEl.addEventListener("blur", (event) => {
   const name = event.target.value.trim();
