@@ -114,6 +114,8 @@ nameEl.addEventListener("blur", (event) => {
   }
 });
 
+
+
 addressEl.addEventListener("blur", (event) => {
   const address = event.target.value.trim();
 
@@ -167,3 +169,10 @@ messageEl.addEventListener("blur", (event) => {
     messageError.innerHTML = "";
   }
 });
+
+
+
+
+
+
+
