@@ -1,0 +1,16 @@
+body {
+    padding:20px;
+
+}
+    
+
+.details-content {
+    background-color:white;
+    width: 400px;
+    border-radius: 10px;
+    padding:20px;
+}
+
+.image-pokemon {
+    margin: 0 auto;
+}
