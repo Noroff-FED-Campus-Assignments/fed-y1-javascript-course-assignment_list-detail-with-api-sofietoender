@@ -4,6 +4,14 @@
  * @example https://fed-vocational-astro-course.vercel.app/en/html-css/module-2/forms
  */
 
+ main {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ }
+
 .c-form {
   display: grid;
   grid-template-columns: 1fr;
@@ -17,10 +25,11 @@
 form {
   display:flex;
   flex-direction: column;
-  width: 400px;
+  max-width: 400px;
   background-color: white;
   border-radius: 10px;
   padding:10px;
+  
 }
 
 input  {
