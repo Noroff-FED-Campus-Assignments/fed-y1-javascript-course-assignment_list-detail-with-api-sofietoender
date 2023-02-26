@@ -10,29 +10,53 @@
       content="HTML, CSS, JavaScript, _REPLACE_WITH_KEYWORD_"
     />
     <meta name="author" content="_YOUR_NAME_" />
-    <link rel="stylesheet" href="/style.css" />
-    <!-- TODO: Import Javascript -->
-    <title>Contact Us | _REPLACE_SITE_NAME</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="src/js/contact.js" defer></script>
+    <title>Contact Us | Pokémon API Project</title>
   </head>
   <body class="animate__animated animate__fadeIn">
     <header class="l-header">
+      <nav>
+        <a href="index.html"> Home </a>
+      </nav>
       <h1>Contact Us</h1>
     </header>
 
     <main class="l-main">
       <article role="doc-introduction">
         <h2>Contact form</h2>
-
-        <p>_REPLACE_INTRODUCTION_</p>
       </article>
 
-      <section role="form-section">
-        <!-- TODO: Creat Form elements here -->
+      <section role="form-section" class="form">
+       
+        <form autocomplete="on" id="js-form">
+          <label>Name</label>
+          <input type="text" id="js-name" required />
+          <p class="error-container" id="js-name-error"></p>
+
+          <label>Address</label>
+          <input type="text" id="js-address" minlength="25" required />
+          <p class="error-container" id="js-address-error"></p>
+
+          <label> E-mail</label>
+          <input type="email" id="js-email" required />
+          <p class="error-container" id="js-email-error"></p>
+
+          <label>Subject</label>
+          <input type="text" id="js-subject" minlength="10" required />
+          <p class="error-container" id="js-subject-error"></p>
+
+          <label>Message</label>
+          <textarea id="js-message" required> </textarea>
+          <p class="error-container" id="js-message-error"></p>
+
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
 
     <footer class="l-footer">
-      <small>Created with ❤️ by _REPLACE_</small>
+      <small>Created with ❤️ Sofie</small>
     </footer>
   </body>
 </html>
