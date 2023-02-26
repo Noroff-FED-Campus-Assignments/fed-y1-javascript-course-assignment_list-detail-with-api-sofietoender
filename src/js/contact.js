@@ -87,7 +87,6 @@ nameEl.addEventListener("blur", (event) => {
 addressEl.addEventListener("blur", (event) => {
   const address = event.target.value.trim();
 
-  // Minmum 25 characters
   const minLengthRegex = /^[a-zA-Z0-9_ ]{25,}/g;
 
   if (!minLengthRegex.test(address)) {
@@ -100,7 +99,6 @@ addressEl.addEventListener("blur", (event) => {
 emailEl.addEventListener("blur", (event) => {
   const email = event.target.value.trim();
 
-  // Email Validation as per RFC2822 standards.
   const emailRegex =
     /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
@@ -115,7 +113,6 @@ emailEl.addEventListener("blur", (event) => {
 subjectEl.addEventListener("blur", (event) => {
   const subject = event.target.value.trim();
 
-  // Minmum 10 characters
   const minLengthRegex = /^[a-zA-Z0-9_ ]{10,}/g;
 
   if (!minLengthRegex.test(subject)) {
@@ -128,7 +125,6 @@ subjectEl.addEventListener("blur", (event) => {
 messageEl.addEventListener("blur", (event) => {
   const message = event.target.value.trim();
 
-  // Minmum 10 characters
   const minLengthRegex = /^[a-zA-Z0-9_ ]{10,}/g;
 
   if (!minLengthRegex.test(message)) {
