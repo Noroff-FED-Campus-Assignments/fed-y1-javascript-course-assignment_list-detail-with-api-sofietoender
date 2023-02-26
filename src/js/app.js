@@ -87,7 +87,7 @@ async function fetchPokemon() {
       <div class="details">
          <a href="/details.html?id=${pokemonData.name}" class="card">
            
-             <img src="${pokemonData.sprites.front_default}" class="image"/>
+             <img src="${pokemonData.sprites.front_default}" class="image" aria-label =" Photo of Pokémon"/>
              <div class="card-details">
              <h4 class="name">${
                pokemonData.name.charAt(0).toUpperCase() +

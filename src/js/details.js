@@ -82,7 +82,7 @@ function showPokemonDetails(pokemon) {
   }
 
   detailsContent.innerHTML = `
-    <img src="${pokemon.sprites.front_default}" class ="image-pokemon"/>
+    <img src="${pokemon.sprites.front_default}" class ="image-pokemon"aria-label =" Photo of Pokémon" />
     <ul>${abilityList}</ul>
     <ul>${typeList}</ul>
   `;
