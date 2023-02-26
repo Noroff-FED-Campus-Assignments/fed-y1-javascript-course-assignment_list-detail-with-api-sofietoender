@@ -21,7 +21,7 @@ async function fetchPokemon() {
 
     const pokemons = json.results;
 
-    if (pokemons.length > 0) {
+    if (pokemons.length < 0) {
       loader.innerHTML = "";
     }
 
