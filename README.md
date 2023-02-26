@@ -8,14 +8,21 @@ This project was bootstrapped with Vite.
 
 ## Resources
 
-- [Design](_LINK_TO_FIGMA_)
+- 
 - [Production deploy](_LINK_TO_WEBSITE_)
 - [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
-- [API Docs](_LINK_TO_API_DOCS_)
+- [API Docs](https://pokeapi.co/)
 
 ## Report
 
-_ADD_YOUR_REPORT_HERE_
+The aim of this project was to learn about Javascript and API, so I picked the Pokemon API because it had pictures that I could use. 
+
+It took me a while to understand all the information in the documentation, and it was difficult to figure out how to display  the pictures and the other data. 
+
+The website contains three pages. An index page, details and contact page. The JavaScript coding took longer than expected, so I had to prioritize it over the design aspect.
+
+During the development process, I found that it was easier for me to work with form validation rather than utilizing the data from the API.
+
 
 ## Getting Started
 
