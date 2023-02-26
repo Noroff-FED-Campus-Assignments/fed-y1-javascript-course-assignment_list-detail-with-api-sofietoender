@@ -7,10 +7,7 @@ This is a vanilla website that displays a list of items fetched from an API.
 This project was bootstrapped with Vite.
 
 ## Resources
-
-- 
-- [Production deploy](_LINK_TO_WEBSITE_)
-- [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
+- [Production deploy](https://delightful-nougat-f9b0d7.netlify.app/)
 - [API Docs](https://pokeapi.co/)
 
 ## Report
