@@ -14,7 +14,20 @@
   box-shadow: var(--shadow-1);
 }
 
+form {
+  display:flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding:10px;
+}
+
 input  {
+  margin: 8px;
+}
+
+textarea {
   margin: 8px;
 }
 
@@ -26,8 +39,13 @@ button {
   padding:10px 30px 10px 30px;
 }
 
-h1,h2,label {
+h1,h2{
   color:white;
+}
+
+label {
+  color:black;
+  margin: 8px;
 }
 
 
