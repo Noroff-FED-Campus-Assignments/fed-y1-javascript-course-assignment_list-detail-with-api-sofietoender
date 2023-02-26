@@ -30,9 +30,6 @@ Helper functions
 
 document.title = "Contact us | Pokémon ";
 
-const introduction = document.querySelector(".introduction");
-introduction.innerHTML = "Please use the contact form for any inqueries";
-
 const formEl = document.querySelector("#js-form");
 const nameEl = document.querySelector("#js-name");
 console.log(nameEl);
@@ -70,7 +67,7 @@ formEl.addEventListener("submit", (event) => {
     alert("Please enter an address");
     return;
   }
-  if (address.lenght. < 25) {
+  if (address.length < 25) {
     alert("Address must be more than 25 characters");
     return;
   }
@@ -80,7 +77,7 @@ formEl.addEventListener("submit", (event) => {
     return;
   }
 
-  if (subject.lenght < 10) {
+  if (subject.length < 10) {
     alert("Subject must be more than 10 characters");
     return;
   }
@@ -169,7 +166,6 @@ messageEl.addEventListener("blur", (event) => {
     messageError.innerHTML = "";
   }
 });
-
 
 
 

@@ -84,8 +84,9 @@ async function fetchPokemon() {
       const pokemonData = await pokemonResponse.json();
 
       resultContainer.innerHTML += `
+      <div class="details">
          <a href="/details.html?id=${pokemonData.name}" class="card">
-           <div class="details">
+           
              <img src="${pokemonData.sprites.front_default}" class="image"/>
              <div class="card-details">
              <h4 class="name">${
@@ -96,9 +97,11 @@ async function fetchPokemon() {
                <li>weight: ${pokemonData.weight}</li>
                <li>height: ${pokemonData.height}</li>
              </ul>
-             <div/>
+             
+             <button class="button-card"> More info </button>
            </div>
          </a> 
+         <div/>
        `;
     });
   } catch (error) {
